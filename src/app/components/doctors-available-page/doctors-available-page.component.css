@@ -1,0 +1,53 @@
+.main
+{
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background: url('https://cdn.pixabay.com/photo/2016/08/09/21/54/lake-1581879_960_720.jpg') center center;
+  background-size: cover;
+}
+.main::before
+{
+  content: "";
+  position: absolute;
+  background:rgba(0,0,0,0.5) ;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+.img_div img
+{
+  height: 50%;
+  border-radius: 50%;
+  border-bottom-left-radius: 50%!important;
+  border-top-left-radius: 50%!important;
+  margin-top: 10px;
+}
+
+.icons
+{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.card
+{
+  box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.5);
+  background:rgba(247, 212, 212, 0.6) ;
+  color: white;
+}
+
+button
+{
+  background: rgba(255, 71, 126,0.5);
+  border:pink
+}
+button:hover
+{
+  background: hotpink;
+}
+.card:hover{
+  background:rgba(247, 212, 212, 0.9) ;
+}

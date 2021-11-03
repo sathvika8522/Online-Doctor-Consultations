@@ -1,0 +1,51 @@
+.card
+{
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+  position: relative;
+  margin-top: 100px;
+  height: 150px;
+  border-radius: 25px;
+  width: 23rem;
+}
+.card img
+{
+  position: absolute;
+  left: 24%;
+  right: 25%;
+  top: -80px;
+  height: 150px;
+  width: 200px;
+  border-radius: 15px
+}
+.card-body
+{
+    position: relative;
+    top: 70px;
+    opacity: 0;
+}
+
+.card-body .btn
+{
+  position: absolute;
+  bottom: 69.5px;
+  left: 0;
+  width: 100%;
+  background: pink;
+  color: white;
+  border-radius: 25px;
+  background: #A82973;
+}
+.card-body h5,p
+{
+  text-align: center;
+}
+
+.card:hover
+{
+  height: 200px;
+}
+
+.card-body:hover
+{
+    opacity: 1;
+}

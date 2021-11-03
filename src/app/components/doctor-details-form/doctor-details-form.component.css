@@ -1,0 +1,82 @@
+.container {
+  position: relative;
+}
+.main {
+  height: 900px;
+  width: 100%;
+  /* background: url("https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") */
+    /* center center; */
+  background: url('https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg') center center;
+  background-size: cover;
+  position: relative;
+}
+.main::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+form {
+  width: 650px;
+  border-radius: 11px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  padding-right: 35px;
+  transform: translate(40px, -20px);
+  /* background: rgba(220, 177, 240, 0.5); */
+  /* background: rgba(250, 224, 228,0.5); */
+  background:rgba(247, 212, 212, 0.6) ;
+  border: 3px solid hotpink;
+}
+form input {
+    margin: 10px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px;
+    outline: none;
+    color: #000 !important;
+    font-size: 16px;
+    border: 3px solid hotpink;
+  }
+
+form button
+{
+    width: 80%;
+    border-radius: 25px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    background: rgba(201, 24, 74,0.8);
+    font-weight: bolder;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 650px;
+  border-radius: 11px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  padding-right: 28px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-39px, 210px);
+  background: rgba(230, 191, 209, 0.5);
+  border: 3px solid hotpink;
+}
+.about input {
+  border: 3px solid hotpink;
+  margin: 7px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  outline: none;
+  color: #000 !important;
+  font-size: 16px;
+}

@@ -1,0 +1,55 @@
+<div class="main p-5" style="height: 100vh;width: 100vw;" >
+<div class="container position-relative">
+  <form #ref="ngForm" (ngSubmit)="onSignup(ref.value)">
+    <div class="title">Sign up</div>
+
+    <!-- username -->
+    <div class="input-box">
+      <input type="text" placeholder="Enter Username" name="username" required ngModel #refun="ngModel" />
+      <p class="text-danger" *ngIf="(ref.submitted || refun.touched) && refun.errors?.required">*Username Required!!!</p>
+      <div class="underline"></div>
+    </div>
+
+    <!-- password -->
+    <div class="input-box">
+      <input type="password" placeholder="Enter Password" name="password" required ngModel #refup="ngModel"/>
+      <p class="text-danger" *ngIf="(ref.submitted || refup.touched) && refup.errors?.required">*Password Required!!!</p>
+      <div class="underline"></div>
+    </div>
+
+    <!-- e-mail -->
+    <div class="input-box underline">
+      <input type="text" placeholder="Enter Email" name="email" required ngModel #refue="ngModel" />
+      <p class="text-danger" *ngIf="(ref.submitted || refue.touched) && refue.errors?.required">*Email Required!!!</p>
+      <div class="underline"></div>
+    </div>
+
+    <!-- check box -->
+    <div class="checkbox-container">
+      <div class="custom-checkbox">
+        <input type="radio" id="checkbox-1-1" name="userOccup" value="doctor" class="cb" #cbv ngModel/>
+        <label for="checkbox-1-1">Doctor</label>
+      </div>
+
+      <div class="custom-checkbox">
+        <input type="radio" id="checkbox-1-2" name="userOccup" value="others" class="cb" ngModel/>
+        <label for="checkbox-1-1">Others</label>
+      </div>
+    </div>
+    <!-- end of check box -->
+
+    <!-- submit -->
+    <div class="input-box butn">
+      <button type="submit">Sign Up</button>
+      
+    </div>
+  </form>
+  <div class="option">or Connect With Social Media</div>
+  <div class="twitter">
+    <a href="#">Sign in With Google</a>
+  </div>
+  <div class="facebook">
+    <a href="#">Sign in With Facebook</a>
+  </div>
+</div>
+</div>

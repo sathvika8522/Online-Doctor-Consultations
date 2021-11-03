@@ -1,0 +1,44 @@
+/* om namah shivaya */
+
+img
+{
+    margin-top: 35px;
+    width:270px;
+    border-radius: 20px;
+    border:2px solid black;
+    box-shadow: rgba(235, 230, 230, 0.8) 0px 3px 6px;
+}
+
+.container
+{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;
+    background:rgba(247, 212, 212, 0.6) ;
+    color: white;
+}
+
+.main
+{
+    position: relative;
+    background:url('https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.main::before
+{
+   content: "";
+   background:rgba(0,0,0,0.5) ;
+   position:absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+}
+
+button
+{
+    background:rgba(255, 71, 126);
+    width: 70%;
+    border:2px solid white;
+    border-radius: 10px;
+}

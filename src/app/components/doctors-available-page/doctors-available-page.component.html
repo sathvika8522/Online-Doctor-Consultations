@@ -1,0 +1,34 @@
+<div class="main">
+<div class="container position-relative"> 
+  <div class="card-group">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 g-4">
+       <div class="col" *ngFor="let i of a">
+        <div class="card mb-3 mt-5" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-3 img_div ps-3">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkLjvVJzr4NKdiNxQo1vXw-Tzb9VTXnfoLcz376mSMLTcwZWsRL1TUjRyp54tA6n6ZSCc&usqp=CAU" class="img-fluid rounded-start" alt="...">
+              <div class="icons">
+                <i class="fas fa-video ps-1"> online</i>
+                <br>
+                <i class="fas fa-user-md ps-1"> Inperson</i>
+              </div>
+            
+            </div>
+            <div class="col-md-8 content">
+              <div class="card-body">
+                <h5 class="card-title">Dr.UmaMaheshwar</h5>
+                <p class="card-text">GENERAL PHYSICIAN/ INTERNAL MEDICINE | 23 YRS</p>
+                <p>FEES || 
+                <span style="font-weight: bolder;">$1000</span> </p>
+                <p class="card-text"><small class=""><i class="fas fa-map-marker-alt"></i> Apollo Hospitals, Jubilee Hills, Hyderabad</small></p>
+              </div>
+            </div>
+          </div>
+          <button class="btn text-white" (click)="appointment()">Make Appointment</button>
+        </div>
+        
+       </div>
+    </div>
+  </div>
+</div>
+</div>

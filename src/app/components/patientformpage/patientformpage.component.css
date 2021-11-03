@@ -1,0 +1,144 @@
+/*om namah shivaya*/
+ #hero {
+    width: 100%;
+    height: 70vh;
+    background: url("https://cdn.pixabay.com/photo/2018/01/12/14/24/night-3078326_960_720.jpg") center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero .container {
+    padding-top: 60px;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  #hero img
+  {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+  }
+
+  
+  #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  
+  .main-btn {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+   .main-btn:hover {
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color:#fff;
+  }
+
+  
+  .microphone
+  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 6px 6px 5px rgba(0,0,0, 0.5);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 25px;
+    color: #590D22;
+    background: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .microphone input
+  {
+     border-radius: 25px;
+     border:3px solid rgba(164, 19, 60);
+     background: rgba(255, 255, 255);
+  }
+   
+  .microphone .btn
+  {
+    width: 70%;
+    border-radius: 25px;
+    padding: 10px;
+    background: rgba(201, 24, 74);
+  }
+
+  .container
+  {
+     font-size: 16px;
+     width: 1200px;
+     margin:auto;
+     padding: 10px;
+
+  }
+
+  .section2{
+    width:100%;
+    margin:5vh auto;
+    }
+    
+    .section2 .cards{
+    margin:auto;
+    width:90%;
+    display:flex;
+    }
+    
+    .section2 .cards .card{
+    width:24%;
+    margin:20px;
+    text-align:Center;
+    }
+    
+    .section2 .cards .card .fa{
+    font-size:3em;
+    color:#01bcd4;
+    }
+    
+    .section2 .cards .card p{
+    color:rgba(1,1,1,0.7);
+    }
+    
+    .section2 .card
+    {
+      padding: 15px;
+      box-shadow: 2px 3px 5px rgba(0,0,0, 0.5);
+    }    
+ 

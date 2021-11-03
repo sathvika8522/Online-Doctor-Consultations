@@ -1,0 +1,58 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Montserrat"
+  rel="stylesheet"
+  type="text/css"
+/>
+
+<div class="signinContainer">
+  <div class="login text-white mt-5">
+    <h2 class="active">sign in</h2>
+    <form class="text-white" #ref="ngForm" (ngSubmit)="onSignin(ref.value)">
+      <input type="text" class="text" name="username" ngModel />
+      <span>username</span>
+
+      <br />
+
+      <br />
+
+      <input type="password" class="text" name="password" ngModel />
+      <span>password</span>
+      <br />
+
+      <!-- check box -->
+      <div class="checkbox-container">
+        <div class="custom-checkbox">
+          <input
+            type="radio"
+            id="checkbox-1-1"
+            name="userOccup"
+            value="doctor"
+            class="cb"
+            #cbv
+            [(ngModel)]="usertype"
+          />
+          <label for="checkbox-1-1">Doctor</label>
+        </div>
+
+        <div class="custom-checkbox">
+          <input
+            type="radio"
+            id="checkbox-1-2"
+            name="userOccup"
+            value="others"
+            class="cb"
+            [(ngModel)]="usertype"
+          />
+          <label for="checkbox-1-1">Others</label>
+        </div>
+      </div>
+      <!-- end of check box -->
+
+      <button type="submit" class="signin">Sign In</button>
+
+      <hr />
+
+      <a href="#">Forgot Password?</a>
+    </form>
+  </div>
+</div>
