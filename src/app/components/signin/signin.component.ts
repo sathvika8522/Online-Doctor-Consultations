@@ -27,7 +27,7 @@ export class SigninComponent implements OnInit {
            alert('logged in succefully..........')
            localStorage.setItem('token',res.token);
            localStorage.setItem('username',res.username);
-           localStorage.setItem('userobj',res.userobj);
+           localStorage.setItem('userobj',JSON.stringify(res.userobj));
            localStorage.setItem('userOccup',res.userOccup);
 
            

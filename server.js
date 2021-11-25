@@ -12,6 +12,7 @@ app.use(exp.static(path.join(__dirname, './dist/hackproj/')))
 
 /*-------------------api's-------------*/
 const userapp=require("./API'S/userapi")
+const doctorapp=require("./API'S/doctorApi")
 
 
 /*------------------database url-----------------*/
@@ -28,20 +29,23 @@ mc.connect(databaseurl,{useNewUrlParser:true,useUnifiedTopology:true},(err,clien
     {
         let databaseobj=client.db("hackprojdb")
         let usercollectionobj=databaseobj.collection("userscollection")
+        let doctorcollectionobj=databaseobj.collection("doctorcollection")
         console.log("connected to database :))))))")
 
         app.set("usercollectionobj",usercollectionobj)
+        app.set("doctorcollectionobj",doctorcollectionobj)
     }
 })
 
 /*-------------------middlewares to connect router's------------------*/
 app.use("/user",userapp)
+app.use("/doctor",doctorapp)
 
 
 /*-----------------checking if path is correct or wrong--------------------*/
 app.use((req, res, next) => {
 
-    res.send({ message: `path ${req.url} is invalid` })
+    res.send({ message: `path ${req.url} is invalid..................` })
 })
 
 /*-----------------assingning port number-----------------*/

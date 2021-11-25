@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DoctorService } from 'src/app/services/doctor.service';
 
 @Component({
   selector: 'app-doctors-available-page',
@@ -7,15 +8,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./doctors-available-page.component.css']
 })
 export class DoctorsAvailablePageComponent implements OnInit {
-  a=[1,2 ,3 , 4 , 5 , 6]
-  constructor(private router:Router) { }
+  
+  doctors=[]
+  constructor(private router:Router,private ds:DoctorService) { }
 
   ngOnInit(): void {
+    this.ds.getDoctors().subscribe(
+      res=>
+      {
+         this.doctors=res.message
+         console.log(this.doctors)
+      },
+      err=>
+      {
+        console.log('errr in doctors-available-page.component.ts')
+      }
+    );
   }
-   
-  appointment()
+  
+  
+  appointment(email:any)
   {
-     this.router.navigateByUrl('/doctorInfo')
+    this.router.navigateByUrl('/doctorInfo')
+    localStorage.setItem('email',email)
   }
 
 }
