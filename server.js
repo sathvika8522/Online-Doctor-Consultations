@@ -16,14 +16,14 @@ const doctorapp=require("./API'S/doctorApi")
 
 
 /*------------------database url-----------------*/
-const databaseurl='mongodb+srv://stress_management:stress@shankari.y5ud8.mongodb.net/hackprojdb?retryWrites=true&w=majority'
-
+//const databaseurl='mongodb://stress_management:stress@shankari-shard-00-00.y5ud8.mongodb.net:27017,shankari-shard-00-01.y5ud8.mongodb.net:27017,shankari-shard-00-02.y5ud8.mongodb.net:27017/?ssl=true&replicaSet=atlas-6eowk0-shard-0&authSource=admin&retryWrites=true&w=majority'
+const databaseurl='mongodb://pedroMern:pedroMern@shankari-shard-00-00.y5ud8.mongodb.net:27017,shankari-shard-00-01.y5ud8.mongodb.net:27017,shankari-shard-00-02.y5ud8.mongodb.net:27017/?ssl=true&replicaSet=atlas-6eowk0-shard-0&authSource=admin&retryWrites=true&w=majority'
 /*------------------connecting to database-----------------*/
 mc.connect(databaseurl,{useNewUrlParser:true,useUnifiedTopology:true},(err,client)=>
 {
     if(err)
     {
-        console.log('error in connecting to database :((')
+        console.log('error in connecting to database :((', err)
     }
     else
     {
@@ -49,5 +49,5 @@ app.use((req, res, next) => {
 })
 
 /*-----------------assingning port number-----------------*/
-const port=3000
+const port=4200
 app.listen(port,()=>console.log(`server listening in ${port}...............`)) 
